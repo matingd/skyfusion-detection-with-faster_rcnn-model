@@ -31,24 +31,32 @@ pip install -r requirements.txt
 
 **Data**
 
-Download BraTS 2020 dataset from \[[kaggle website](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation)].
+Download and prepare the SkyFusion dataset (COCO) from Roboflow:
+
+```bash
+from roboflow import Roboflow
+rf = Roboflow(api_key="YOUR_API_KEY")
+project = rf.workspace("yihanren").project("skyfusion-z1ayi")
+version = project.version(1)
+dataset = version.download("coco")
+```
 
 ---
 
-## 📊 Predicted & Real images
+## 📊 Predicted images
 
 <table>
   <tr>
-    <td><img src="test_example/example_1.png" width="480"/></td>
-    <td><img src="test_example/example_2.png" width="480"/></td>
+    <td><img src="assets/predicted_image_1.png" width="480"/></td>
+    <td><img src="assets/predicted_image_2.png" width="480"/></td>
   </tr>
   <tr>
-    <td><img src="test_example/example_3.png" width="480"/></td>
-    <td><img src="test_example/example_4.png" width="480"/></td>
+    <td><img src="assets/predicted_image_10.png" width="480"/></td>
+    <td><img src="assets/predicted_image_21.png" width="480"/></td>
   </tr>
   <tr>
-    <td><img src="test_example/example_5.png" width="480"/></td>
-    <td><img src="test_example/example_6.png" width="480"/></td>
+    <td><img src="assets/predicted_image_23.png" width="480"/></td>
+    <td><img src="test_example/example_26.png" width="480"/></td>
   </tr>
 </table>
 
@@ -58,19 +66,8 @@ Download BraTS 2020 dataset from \[[kaggle website](https://www.kaggle.com/datas
 
 <table>
   <tr>
-    <td colspan="3" align="center"><img src="assets/benchmark_comparison.png" width="960"/></td>
-  </tr>
-  <tr>
-    <td><img src="assets/specificity_curve.png" width="480"/></td>
-    <td><img src="assets/dice_curve.png" width="480"/></td>
-  </tr>
-  <tr>
-    <td><img src="assets/loss_curve.png" width="480"/></td>
-    <td><img src="assets/precision_curve.png" width="480"/></td>
-  </tr>
-  <tr>
-    <td><img src="assets/sensitivity_curve.png" width="480"/></td>
-    <td><img src="assets/iou_curve.png" width="480"/></td>
+    <td><img src="assets/training_loss.png" width="480"/></td>
+    <td><img src="assets/validation_map_val50.png" width="480"/></td>
   </tr>
 </table>
 
@@ -78,13 +75,13 @@ Download BraTS 2020 dataset from \[[kaggle website](https://www.kaggle.com/datas
 
 ## 📝 License
 - **Code License**: This repository’s **code** is released under the MIT License.
-- **Dataset License**: MRI scans and annotations were downloaded from Kaggle and are subject to Kaggle’s dataset license terms. 
+- **Dataset License**: The SkyFusion dataset is provided under Roboflow’s standard terms and subject to their licensing (CC BY for public versions).
 
 ---
 
 ## 🤝 Contributing & Contact
 Feel free to reach out by opening an issue or pull request. For direct questions, you may also contact:
 * **Author**: Matin Gharehdaghi matingd.work@gmail.com
-* **Acknowledgements**: Thanks to the MICCAI BraTS organizers and the research community.
+* **Acknowledgements**: Thanks to Roboflow for dataset hosting and the open-source detection community.
 
 Feel free to open issues or PRs for improvements!
