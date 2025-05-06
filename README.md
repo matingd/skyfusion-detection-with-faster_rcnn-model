@@ -56,7 +56,7 @@ dataset = version.download("coco")
   </tr>
   <tr>
     <td><img src="assets/predicted_image_23.jpg" width="480"/></td>
-    <td><img src="test_example/example_26.jpg" width="480"/></td>
+    <td><img src="assets/predicted_image_26.jpg" width="480"/></td>
   </tr>
 </table>
 
