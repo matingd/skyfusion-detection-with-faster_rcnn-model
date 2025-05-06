@@ -47,16 +47,16 @@ dataset = version.download("coco")
 
 <table>
   <tr>
-    <td><img src="assets/predicted_image_1.png" width="480"/></td>
-    <td><img src="assets/predicted_image_2.png" width="480"/></td>
+    <td><img src="assets/predicted_image_1.jpg" width="480"/></td>
+    <td><img src="assets/predicted_image_2.jpg" width="480"/></td>
   </tr>
   <tr>
-    <td><img src="assets/predicted_image_10.png" width="480"/></td>
-    <td><img src="assets/predicted_image_21.png" width="480"/></td>
+    <td><img src="assets/predicted_image_10.jpg" width="480"/></td>
+    <td><img src="assets/predicted_image_21.jpg" width="480"/></td>
   </tr>
   <tr>
-    <td><img src="assets/predicted_image_23.png" width="480"/></td>
-    <td><img src="test_example/example_26.png" width="480"/></td>
+    <td><img src="assets/predicted_image_23.jpg" width="480"/></td>
+    <td><img src="test_example/example_26.jpg" width="480"/></td>
   </tr>
 </table>
 
